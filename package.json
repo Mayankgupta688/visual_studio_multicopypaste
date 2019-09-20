@@ -1,0 +1,172 @@
+{
+	"name": "multiplecopypaste",
+	"displayName": "MultipleCopyPaste",
+	"description": "Enable User to Copy Paste Multiple Lines",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.multiplePaste1",
+		"onCommand:extension.multiplePaste2",
+		"onCommand:extension.multiplePaste3",
+		"onCommand:extension.multiplePaste4",
+		"onCommand:extension.multiplePaste5",
+		"onCommand:extension.multiplePaste6",
+		"onCommand:extension.multiplePaste7",
+		"onCommand:extension.multiplePaste8",
+		"onCommand:extension.multiplePaste9",
+
+		"onCommand:extension.multipleCopy1",
+		"onCommand:extension.multipleCopy2",
+		"onCommand:extension.multipleCopy3",
+		"onCommand:extension.multipleCopy4",
+		"onCommand:extension.multipleCopy5",
+		"onCommand:extension.multipleCopy6",
+		"onCommand:extension.multipleCopy7",
+		"onCommand:extension.multipleCopy8",
+		"onCommand:extension.multipleCopy9"
+
+
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.multiplePaste1",
+				"title": "Multiple Paste 1"
+			}, {
+				"command": "extension.multiplePaste2",
+				"title": "Multiple Paste 2"
+			}, {
+				"command": "extension.multiplePaste3",
+				"title": "Multiple Paste 3"
+			}, {
+				"command": "extension.multiplePaste4",
+				"title": "Multiple Paste 4"
+			}, {
+				"command": "extension.multiplePaste5",
+				"title": "Multiple Paste 5"
+			}, {
+				"command": "extension.multiplePaste6",
+				"title": "Multiple Paste 6"
+			}, {
+				"command": "extension.multiplePaste7",
+				"title": "Multiple Paste 7"
+			}, {
+				"command": "extension.multiplePaste8",
+				"title": "Multiple Paste 8"
+			}, {
+				"command": "extension.multiplePaste9",
+				"title": "Multiple Paste 9"
+			},
+
+			{
+				"command": "extension.multipleCopy1",
+				"title": "Multiple Copy 1"
+			}, {
+				"command": "extension.multipleCopy2",
+				"title": "Multiple Copy 2"
+			}, {
+				"command": "extension.multipleCopy3",
+				"title": "Multiple Copy 3"
+			}, {
+				"command": "extension.multipleCopy4",
+				"title": "Multiple Copy 4"
+			}, {
+				"command": "extension.multipleCopy5",
+				"title": "Multiple Copy 5"
+			}, {
+				"command": "extension.multipleCopy6",
+				"title": "Multiple Copy 6"
+			}, {
+				"command": "extension.multipleCopy7",
+				"title": "Multiple Copy 7"
+			}, {
+				"command": "extension.multipleCopy8",
+				"title": "Multiple Copy 8"
+			}, {
+				"command": "extension.multipleCopy9",
+				"title": "Multiple Copy 9"
+			}
+		], "keybindings": [{
+			"command": "extension.multiplePaste1",
+			"key": "shift+ctrl+1"
+		}, {
+			"command": "extension.multiplePaste2",
+			"key": "shift+ctrl+2"
+		}, {
+			"command": "extension.multiplePaste3",
+			"key": "shift+ctrl+3"
+		}, {
+			"command": "extension.multiplePaste4",
+			"key": "shift+ctrl+4"
+		}, {
+			"command": "extension.multiplePaste5",
+			"key": "shift+ctrl+5"
+		}, {This is
+			"command": "extension.multiplePaste6",
+			"key": "shift+ctrl+6"
+		}, {
+			"command": "extension.multiplePaste7",
+			"key": "shift+ctrl+7"
+		}, {
+			"command": "extension.multiplePaste8",
+			"key": "shift+ctrl+8"
+		}, {
+			"command": "extension.multiplePaste9",
+			"key": "shift+ctrl+9"
+		}, 
+	
+		{
+			"command": "extension.multipleCopy1",
+			"key": "alt+ctrl+1"
+		}, {
+			"command": "extension.multipleCopy2",
+			"key": "alt+ctrl+2"
+		}, {
+			"command": "extension.multipleCopy3",
+			"key": "alt+ctrl+3"
+		}, {
+			"command": "extension.multipleCopy4",
+			"key": "alt+ctrl+4"
+		}, {
+			"command": "extension.multipleCopy5",
+			"key": "alt+ctrl+5"
+		}, {
+			"command": "extension.multipleCopy6",
+			"key": "alt+ctrl+6"
+		}, {
+			"command": "extension.multipleCopy7",
+			"key": "alt+ctrl+7"
+		}, {
+			"command": "extension.multipleCopy8",
+			"key": "alt+ctrl+8"
+		}, {
+			"command": "extension.multipleCopy9",
+			"key": "alt+ctrl+9"
+		}
+	
+	
+	
+	
+	]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.38.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.2.0"
+	}
+}
