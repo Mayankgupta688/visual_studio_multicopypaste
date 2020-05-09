@@ -17,6 +17,10 @@ Following are the features for the Extension:
 5. Value can be pasted using "Alt + 0", "Alt + 1" ... "Alt + 9" 
 
 ![Getting Started](./Extension/Capture1.PNG)
+![Getting Started](./Extension/Capture2.PNG)
+![Getting Started](./Extension/Capture3.PNG)
+![Getting Started](./Extension/Capture4.PNG)
+![Getting Started](./Extension/Capture5.PNG)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
