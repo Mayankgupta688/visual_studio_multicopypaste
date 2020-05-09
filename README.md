@@ -16,7 +16,7 @@ Following are the features for the Extension:
 4. Paste value at the selected index to the current Editor Curson Location
 5. Value can be pasted using "Alt + 0", "Alt + 1" ... "Alt + 9" 
 
-![Getting Started](./Extension/Capture1.PNG>)
+![Getting Started](./Extension/Capture1.PNG)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
