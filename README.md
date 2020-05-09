@@ -17,18 +17,23 @@ Following are the features for the Extension:
 5. Value can be pasted using "Alt + 0", "Alt + 1" ... "Alt + 9" 
 
 Bored With the Conventional Options of Copy Paste
+
 ![Getting Started](./Extension/Capture1.PNG)
 
 Lets Enable Extension to Copy Multiple Values using "Ctrl + 0"
+ 
 ![Getting Started](./Extension/Capture2.PNG)
 
 Copy another Value at Location 1 using "Ctrl + 1"
+
 ![Getting Started](./Extension/Capture3.PNG)
 
 We can Copy upto 10 Values
+
 ![Getting Started](./Extension/Capture4.PNG)
 
 Paste The Value using "Alt + 0" ... "Alt + 9"
+
 ![Getting Started](./Extension/Capture5.PNG)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
