@@ -36,8 +36,6 @@ Paste The Value using "Alt + 0" ... "Alt + 9"
 
 ![Getting Started](./Extension/Capture5.PNG)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
 ## Requirements
 
 We do not have any external Dependency for the Extension.
