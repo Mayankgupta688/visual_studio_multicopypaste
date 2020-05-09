@@ -54,13 +54,13 @@ function activate(context) {
 
 
 	function copyActivation(inputValue) {
-		vscode.window.activeTextEditor.selections.toString()
 		var editor = vscode.window.activeTextEditor;
-		var selectedValue = vscode.window.activeTextEditor.document.getText(editor.selection);
+		
 		if(!editor) {
 			vscode.window.showInformationMessage('No File is open in Editor...');
 			return;
 		}
+		var selectedValue = vscode.window.activeTextEditor.document.getText(editor.selection);
 		if(selectedValue) {
 			copiedValueString[inputValue] = selectedValue;
 
