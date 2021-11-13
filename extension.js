@@ -12,23 +12,16 @@ function activate(context) {
 
 	var copiedValueString = new Array(10).fill('');
 
-	var disposable = null;
-	var commandName = "";
-
 	for(let i = 0; i< 10; i++) {
-		commandName = 'extension.multiplePaste' + i
-		disposable = vscode.commands.registerCommand(commandName, () => { 
+		const commandNamePaste = 'extension.multiplePaste' + i
+		const commandNameCopy = 'extension.multipleCopy' + i
+		const disposablePaste = vscode.commands.registerCommand(commandNamePaste, () => { 
 			pasteActivation(i);
 		});
-		context.subscriptions.push(disposable);
-	}
-
-	for(let i = 0; i< 10; i++) {
-		commandName = 'extension.multipleCopy' + i
-		disposable = vscode.commands.registerCommand(commandName, () => { 
+		const disposableCopy = vscode.commands.registerCommand(commandNameCopy, () => { 
 			copyActivation(i);
 		});
-		context.subscriptions.push(disposable);
+		context.subscriptions.push(disposablePaste, disposableCopy);
 	}
 	
 
@@ -36,19 +29,17 @@ function activate(context) {
 		if(copiedValueString[inputValue]) {
 			var editor = vscode.window.activeTextEditor;
 			if(!editor) {
-				vscode.window.showInformationMessage('No File is open in Editor...');
+				vscode.window.showErrorMessage('No File is open in Editor...');
 				return;
 			}
+
 			editor.edit((editBuilder) => {
-				editBuilder.delete(editor.selection)
-			}).then(() => {
-				editor.edit((editBuilder) => {
-					vscode.window.showInformationMessage("Value at index " + inputValue + " pasted..." );
-					editBuilder.insert(editor.selection.start, copiedValueString[inputValue]);
-				})
+				editor.selections.forEach(selection => 
+					editBuilder.replace(selection, copiedValueString[inputValue])
+				)
 			})
 		} else {
-			vscode.window.showInformationMessage('No value saved at Position: ' + inputValue );
+			vscode.window.showErrorMessage('No value saved at Position: ' + inputValue );
 		}
 	}
 
@@ -67,12 +58,10 @@ function activate(context) {
 			vscode.window.showInformationMessage('Copied value at Index: ' + inputValue );
 
 		} else {
-			vscode.window.showInformationMessage('No Text Selected...');
+			vscode.window.showErrorMessage('No Text Selected...');
 		}
 	}
 }
-
-exports.activate = activate;
 
 function deactivate() {}
 
